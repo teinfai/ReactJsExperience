@@ -2,13 +2,7 @@ import { initializeApp } from "firebase/app";
 import { getMessaging, getToken, onMessage } from "firebase/messaging";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyAeEgV39aQOKweJcWQm4wFeJfyLlJ-gs1Q",
-  authDomain: "wevogortc.firebaseapp.com",
-  projectId: "wevogortc",
-  storageBucket: "wevogortc.appspot.com",
-  messagingSenderId: "903979441830",
-  appId: "1:903979441830:web:3f84a51924e7fe82df5e67",
-  measurementId: "G-ZR6K0M42G3",
+
 };
 
 const requestNotificationPermission = async () => {

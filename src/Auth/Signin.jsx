@@ -33,33 +33,6 @@ import ChatProvider from "../_helper/Chat/index";
 
 
 
-//
-//                       _oo0oo_
-//                      o8888888o
-//                      88" . "88
-//                      (| -_- |)
-//                      0\  =  /0
-//                    ___/`---'\___
-//                  .' \\|     |// '.
-//                 / \\|||  :  |||// \
-//                / _||||| -:- |||||- \
-//               |   | \\\  -  /// |   |
-//               | \_|  ''\---/''  |_/ |
-//               \  .-\__  '-'  ___/-. /
-//             ___'. .'  /--.--\  `. .'___
-//          ."" '<  `.___\_<|>_/___.' >' "".
-//         | | :  `- \`.;`\ _ /`;.`/ - ` : | |
-//         \  \ `_.   \_ __\ /__ _/   .-` /  /
-//     =====`-.____`.___ \_____/___.-`___.-'=====
-//                       `=---='
-//
-//
-//     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-//
-//               佛祖保佑         永无BUG
-////       Buddha blesses you with no bugs forever
-
-
 // const CurrentDate = ;
 // console.log(CurrentDate);
 
@@ -170,13 +143,11 @@ const Signin = () => {
     // if (info) {
     //   console.log("ss", info);
     // }
-    // REACT_APP_SOCKET="ws://dev.wevetel.com:8090"
     // console.log("wss", info);
 
     const WevoSocket = new SocketComponent({ url: info });
     const CloudSocket = new SocketComponent({ url: process.env.REACT_APP_CLOUD_SOCKET });
-    // const CloudSocket = new SocketComponent({ url: "ws://cloud.wevetel.com:8090" });
-    // const WevoSocket = new SocketComponent({ url: "ws://dev.wevetel.com:8090" });
+
 
     let response; // Declare response variable here
     try {
@@ -265,8 +236,6 @@ const Signin = () => {
       // console.log("ReturnResult", ReturnResult);
       // sbc.wevo.my
       // Check User Exist in Wevo
-      // const WssAddress = 'ws://' + DomainName + ':' + ReturnResult.content.host.wss;
-      const WssAddress = 'wss://' + DomainName + ':' + "8091";
 
       // console.log("WssAddress", WssAddress);
 
