@@ -74,7 +74,6 @@ export const requestForToken = async () => {
     const registration = await navigator.serviceWorker.ready;
     currentToken = await getToken(messaging, {
       serviceWorkerRegistration: registration,
-      vapidKey: `BNhLu75OyIQrWhLU7Sm04eL9VN6HnXLlExBdlykCbiSjYewpZuvWChAX1h2Ai_-TKiFKR9eMTdWgBPFgxC04Wgo`,
     });
 
     if (currentToken) {
