@@ -34,22 +34,7 @@ let currentToken = null;
 // console.log(messaging);
 
 export const requestForToken = async () => {
-  // const registerServiceWorker = async () => {
-  //   try {
-  //     if ("serviceWorker" in navigator) {
-  //       const registration = await navigator.serviceWorker.register(
-  //         process.env.REACT_APP_PATH_RETRIEVE_TOKEN
-  //       );
-  //       // console.log("Service Worker registered with scope:", registration.scope);
-  //     }
-  //   } catch (error) {
-  //     // console.error("Error registering Service Worker:", error);
-  //   }
-  // };
-
-  // // Call the async function directly
-  // registerServiceWorker();
-
+  
   const registerServiceWorker = async () => {
     try {
       if ("serviceWorker" in navigator) {
