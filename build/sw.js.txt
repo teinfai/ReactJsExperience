@@ -1,0 +1,11 @@
+// sw.js
+self.addEventListener("notificationclick", (event) => {
+    if (event.action === "answer") {
+        // Handle the "Answer" button click.
+        console.log("User clicked Answer.");
+    } else if (event.action === "reject") {
+        // Handle the "Reject" button click.
+        console.log("User clicked Reject.");
+    }
+    event.notification.close();
+});
